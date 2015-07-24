@@ -2,7 +2,7 @@
 require_once("config.php");
 
 class Database{
-	private $connection;
+	public $connection;
 
 	function __construct(){
 		$this->open_db_connection();
@@ -29,6 +29,10 @@ class Database{
 	public function escape_string($string){
 		$escaped_string = mysqli_real_escape_string($this->connection, $string);
 		return $escaped_string;
+	}
+
+	public function the_insert_id(){
+		return mysqli_insert_id($this->connection);
 	}
 
 }

@@ -8,18 +8,20 @@
             <small>...</small>
         </h1>
         <?php
-            // $result_set = User::find_all_users();
-            // while($row = mysqli_fetch_array($result_set)){
-            //     echo $row["username"] . "<br>";
-            // }
+            // $user = new User();
+            // $user->username = "sexy";
+            // $user->password = "123";
+            // $user->first_name = "Amanda";
+            // $user->last_name = "Chapman";
 
-            // $found_user = User::find_user_by_id(2);
-            // $user = User::instantation($found_user);
-            // echo $user->first_name;
-            // echo "<br>";
+            // $user->create();
 
-            $found_user = User::find_user_by_id(2);
-            echo $found_user->username;
+            // $user = User::find_user_by_id(4);
+            // $user->first_name = "Sarah";
+            // $user->last_name = "Morehead";
+            // $user->update();
+            $user = User::find_user_by_id(5);
+            $user->delete();
          ?>
         <ol class="breadcrumb">
             <li>
