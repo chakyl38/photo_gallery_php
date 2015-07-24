@@ -16,12 +16,17 @@
 
             // $user->create();
 
-            // $user = User::find_user_by_id(4);
+            $user = User::find_user_by_id(2);
+            // $user->username = "Hottie";
             // $user->first_name = "Sarah";
             // $user->last_name = "Morehead";
-            // $user->update();
-            $user = User::find_user_by_id(5);
-            $user->delete();
+            $user->password = "1234";;
+            $user->update();
+            // $user = User::find_user_by_id(5);
+            // $user->delete();
+            // $user = User::find_user_by_id(2);
+            // $user->username = "KENDALL";
+            // $user->save();
          ?>
         <ol class="breadcrumb">
             <li>
